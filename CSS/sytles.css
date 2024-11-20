@@ -12,6 +12,10 @@ html {
     --color-body: #918ca4;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-size: 2.4rem;
     font-family: Inter, Arial, Helvetica, sans-serif;
@@ -121,41 +125,98 @@ a {
     border-radius: 100%;
 }
 
+.btn {
+    padding: 2rem 3rem;
+    cursor: pointer;
+    border: 0;
+    border-radius: 40px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.btn--primary {
+    background: var(--color-primary);
+}
+
+.btn--secondary {
+    background: var(--color-secondary);
+}
+
+.btn--accent {
+    background: var(--color-accent);
+}
+
+.btn--block {
+    display: inline-block;
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.btn--outline {
+    background: #fff;
+    border: 2px solid var(--color-headings);
+    color: var(--color-headings);
+}
+
 
 /* State */
 
 @media  screen and (min-width: 1024px) {
+    body {
+        font-size: 1.8rem;
+            }
+
+    h1 {
+        font-size: 8rem;
+            }
+
+    h3 {
+        font-size: 2.4;
+            }
+
+    .link-arrow {
+        font-size: 1.5rem;
+            }
+
+    .badge {
+        font-size: 1.5rem;
+            }
+
+    .badge--small {
+        font-size: 1.2rem;
+            }
+
+    .list--tick .list__item {
+        padding-left: 0;
+            }
+
+    .btn {
+        font-size: 1.5rem;
+        }
 }
-body {
-    font-size: 1.8rem;
-    }
-
-h1 {
-    font-size: 8rem;
-    }
-
-h3 {
-    font-size: 2.4;
-    }
-
-.link-arrow {
-    font-size: 1.5rem;
-    }
-
-.badge {
-    font-size: 1.5rem;
-    }
-
-.badge--small {
-    font-size: 1.2rem;
-    }
-
-.list--tick .list__item {
-    padding-left: 0;
-    }
-
 
 .link-arrow:hover::after {
     margin-left: 10px;
+}
+
+.btn--primary:hover {
+    background: #38affd;
+}
+
+.btn--secondary:hover {
+    background: #0c8bee;
+}
+
+.btn--accent:hover {
+    background: #ec3000;
+}
+
+.btn--outline:hover {
+    background: var(--color-headings);
+    color: #fff;
 }
 
