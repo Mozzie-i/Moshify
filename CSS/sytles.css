@@ -48,6 +48,10 @@ a {
     text-decoration: none;
 }
 
+::placeholder {
+    color: #cdcbd7;
+}
+
 
 /* Module */
 
@@ -162,6 +166,15 @@ a {
     color: var(--color-headings);
 }
 
+.input {
+    outline: 0;
+    padding: 1.5rem 3.5rem;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 2rem;
+    color: var(--color-headings);
+}
+
 
 /* State */
 
@@ -197,6 +210,10 @@ a {
     .btn {
         font-size: 1.5rem;
         }
+    
+    .input {
+        font-size: 1.5rem;
+    }
 }
 
 .link-arrow:hover::after {
