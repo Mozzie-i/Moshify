@@ -88,6 +88,7 @@ a {
 }
 
 .badge--small {
+    padding: .5rem 1.5rem;
     font-size: 1.6rem;
 }
 
@@ -178,15 +179,15 @@ a {
 }
 
 .input-group {
+    display: flex;
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
-    display: flex;
 }
 
 .input-group .input {
-    border: 0;
     flex-grow: 1;
     padding: 1.5rem 1rem;
+    border: 0;
 }
 
 .input-group .btn {
@@ -194,9 +195,9 @@ a {
 }
 
 .card {
-    border-radius: 7px;
     box-shadow: 0 0 20px 10px #f3f3f3;
     overflow: hidden;
+    border-radius: 7px;
 }
 
 .card__header, .card__body {
@@ -213,49 +214,113 @@ a {
     color: #fff;
 }
 
+.card__secondary .badge--secondary {
+    background: #02cdf1;
+}
+
+.plan__name {
+    margin: 0 0 1.5rem 0;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.plan__price {
+    font-size: 6rem;
+}
+
+.plan__billing-cycle {
+    opacity: .8;
+    margin-right: 1rem;
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+.plan__description {
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.plan .list__item {
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.plan__popular .card__header {
+    position: relative;
+}
+
 
 /* State */
 
 @media  screen and (min-width: 1024px) {
-    body {
-        font-size: 1.8rem;
-            }
+body {
+    font-size: 1.8rem;
+    }
 
-    h1 {
-        font-size: 8rem;
-            }
+h1 {
+    font-size: 8rem;
+    }
 
-    h3 {
-        font-size: 2.4;
-            }
+h3 {
+    font-size: 2.4;
+    }
 
-    .link-arrow {
-        font-size: 1.5rem;
-            }
+.link-arrow {
+    font-size: 1.5rem;
+    }
 
-    .badge {
-        font-size: 1.5rem;
-            }
+.badge {
+    font-size: 1.5rem;
+    }
 
-    .badge--small {
-        font-size: 1.2rem;
-            }
+.badge--small {
+    font-size: 1.2rem;
+    }
 
-    .list--tick .list__item {
-        padding-left: 0;
-            }
+.list--tick .list__item {
+    padding-left: 0;
+    }
 
-    .btn {
-        font-size: 1.5rem;
-        }
-    
-    .input {
-        font-size: 1.5rem;
+.btn {
+    font-size: 1.5rem;
+    }
+        
+.input {
+    font-size: 1.5rem;
+    }
+
+.plan__name {
+    font-size: 1.4rem;
+    }
+
+.plan__price {
+    font-size: 5rem;
+    }
+
+.plan__billing-cycle {
+    font-size: 1.6rem;
+    }
+
+.plan__description {
+    font-size: 1.7rem;
     }
 }
 
 .link-arrow:hover::after {
     margin-left: 10px;
+}
+
+.plan__popular .card__header::before {
+    content: url(../Images/popular.svg);
+    display: inline-block;
+    position: absolute;
+    top: -3%;
+    right: 5%;
+    width: 40px;
 }
 
 .btn--primary:hover {
