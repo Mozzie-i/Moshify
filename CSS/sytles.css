@@ -295,9 +295,19 @@ a {
     bottom: 10px;
 }
 
+.grid {
+    display: grid;
+}
+
 
 
 /* State */
+
+@media screen and (min-width: 768px) {
+.grid--cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
 
 @media  screen and (min-width: 1024px) {
 body {
@@ -362,6 +372,10 @@ h3 {
 
 .quote__organization {
     font-size: 1.6rem;
+}
+
+.grid--cols-3 {
+    grid-template-columns: repeat(3, 1fr);
 }
 }
 
