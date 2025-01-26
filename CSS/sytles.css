@@ -148,6 +148,7 @@ a {
 }
 
 .btn {
+    outline: 0;
     padding: 2rem 3rem;
     cursor: pointer;
     border: 0;
@@ -157,6 +158,13 @@ a {
     color: #fff;
     text-transform: uppercase;
     white-space: nowrap;
+}
+
+.btn .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
 }
 
 .btn--primary {
@@ -201,7 +209,7 @@ a {
 
 .input-group .input {
     flex-grow: 1;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
     border: 0;
 }
 
@@ -486,6 +494,24 @@ a {
     width: 100%;
 }
 
+.block__domain .input-group {
+    box-shadow: 0 0 30px 20px #e6ebee;
+    max-width: 670px;
+    margin: 4rem auto;
+    border: 0;
+}
+
+.block-domain__prices {
+    justify-items: center;
+    display: grid;
+    grid-template-rows: repeat(2, 6rem);
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 
 /* State */
 
@@ -538,6 +564,10 @@ a {
 .hero__content {
     align-self: center;
     text-align: left;
+}
+
+.block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 }
 
