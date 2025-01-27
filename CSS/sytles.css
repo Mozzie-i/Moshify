@@ -241,6 +241,10 @@ a {
     background: #02cdf1;
 }
 
+.plan {
+    transition: transform .2s ease-out;
+}
+
 .plan__name {
     margin: 0 0 1.5rem 0;
     font-size: 2.4rem;
@@ -512,6 +516,15 @@ a {
     font-weight: 600;
 }
 
+.block__plans .grid {
+    gap: 8rem 4rem;
+}
+
+.block__plans .card {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 
 /* State */
 
@@ -539,6 +552,10 @@ a {
 
 .callout__content {
     text-align: left;
+}
+
+.plan__popular {
+    transform: scale(1.1);
 }
 
 .nav__toggler {
@@ -692,3 +709,10 @@ h3 {
     color: #fff;
 }
 
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan__popular:hover {
+    transform: scale(1.15);
+}
