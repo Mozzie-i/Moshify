@@ -106,8 +106,8 @@ a {
 
 .list--tick {
     padding-left: 3rem;
-    list-style-image: url(../Images/tick.svg);
     color: var(--color-headings);
+    list-style-image: url(../Images/tick.svg);
 }
 
 .list--tick .list__item {
@@ -441,8 +441,8 @@ a {
 }
 
 .block__header {
-    text-align: center;
     margin-bottom: 4rem;
+    text-align: center;
 }
 
 .container {
@@ -549,6 +549,49 @@ a {
     width: 100%;
 }
 
+.footer {
+    background: #232323;
+}
+
+.footer a {
+    transition: color .3s;
+    color: #777;
+}
+
+.footer__section {
+    padding: 2rem;
+    border-bottom: 1px solid #393939;
+}
+
+.footer__heading {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer__brand {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.footer__brand img {
+    width: 100%;
+    max-width: 230px;
+}
+
+.footer__copyright {
+    opacity: .3;
+    font-size: 2.1rem;
+    color: #fff;
+}
+
+.footer__section li {
+    margin-bottom: 2.8rem;
+}
+
+.footer__section .list {
+    margin: 0;
+}
+
 
 /* State */
 
@@ -626,6 +669,36 @@ a {
 .block-showcase__img {
     width: auto;
     max-width: 700px;
+}
+
+.footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.footer .collapsible__chevron {
+    display: none;
+}
+
+.footer .collapsible__content {
+    opacity: 1;
+    max-height: 100vh;
+}
+
+.footer__brand {
+    order: -1;
+    margin-top: 1rem;
+}
+
+.footer__copyright {
+    font-size: 1.5rem;
+}
+
+.footer__section {
+    border: 0;
+}
+
+.footer__heading {
+    font-size: 1.6rem;
 }
 }
 
@@ -761,5 +834,9 @@ h3 {
 
 ::selection {
     background: var(--color-primary);
+    color: #fff;
+}
+
+.footer a:hover {
     color: #fff;
 }
