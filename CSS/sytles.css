@@ -149,7 +149,7 @@ a {
 
 .btn {
     outline: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     cursor: pointer;
     border: 0;
     border-radius: 40px;
@@ -192,6 +192,11 @@ a {
     color: var(--color-headings);
 }
 
+.btn--stretched {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
 .input {
     outline: 0;
     padding: 1.5rem 3.5rem;
@@ -211,6 +216,7 @@ a {
     flex-grow: 1;
     padding: 1.5rem 2rem;
     border: 0;
+    width:0
 }
 
 .input-group .btn {
@@ -509,10 +515,11 @@ a {
 }
 
 .block-domain__prices {
+    color: var(--color-headings);
     justify-items: center;
     display: grid;
     grid-template-rows: repeat(2, 6rem);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     max-width: 700px;
     margin: 0 auto;
     font-size: 2rem;
@@ -551,6 +558,7 @@ a {
 
 .footer {
     background: #232323;
+    padding-top: 230px;
 }
 
 .footer a {
@@ -592,8 +600,32 @@ a {
     margin: 0;
 }
 
+.callout-signup {
+    transform: scale(0.90);
+}
+
+.callout__container {
+    transform: translateY(18rem);
+}
+
 
 /* State */
+
+@media screen and (max-width: 768px) {
+.block--skewed-right {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 98%);
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+.block--skewed-left {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+.testimonial, .testimonial__image-container {
+    transform: scale(0.90);
+}
+}
 
 @media screen and (min-width: 768px) {
 .grid--cols-2 {
@@ -699,6 +731,10 @@ a {
 
 .footer__heading {
     font-size: 1.6rem;
+}
+
+.callout__container {
+    transform: translateY(11rem);
 }
 }
 
